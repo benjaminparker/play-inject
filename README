@@ -1,11 +1,9 @@
 An example of managed controller instantiation in Play 2.1
 ==========================================================
 
-Using the @ symbol before the controller in the routes file and a custom Global object specified in application.conf we
-are able to have control over the instantiation of controller instances.
+Using the @ symbol before the controller in the routes file and a custom Global object specified in application.conf we are able to have control over the instantiation of controller instances.
 
-This is achieved by overriding the getControllerInstance function of GlobalSettings trait.  I use a map in this example
-but you could easily defer this to your dependency injection framework of choice.
+This is achieved by overriding the getControllerInstance function of GlobalSettings trait.  I use a map in this example but you could easily defer this to your dependency injection framework of choice.
 
 Then we can switch our services for stub versions by simply overriding the controller instance in the test version of our
 Global object.
