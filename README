@@ -5,7 +5,6 @@ Using the @ symbol before the controller in the routes file and a custom Global 
 
 This is achieved by overriding the getControllerInstance function of GlobalSettings trait.  I use a map in this example but you could easily defer this to your dependency injection framework of choice.
 
-Then we can switch our services for stub versions by simply overriding the controller instance in the test version of our
-Global object.
+Then we can switch our services for stub versions by simply overriding the controller instance in the test version of our Global object.
 
 This allows for easy switching of real for fake services in integration tests.
